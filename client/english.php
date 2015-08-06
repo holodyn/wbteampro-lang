@@ -20,7 +20,8 @@ $_LANG['wbteampro']['error']['license_error'] = 'wbTeamPro Error: License Author
 $_LANG['wbteampro']['error']['license_invalid'] = 'wbTeamPro Error: Invalid License Key';
 $_LANG['wbteampro']['error']['license_expired'] = 'wbTeamPro Error: License Key Expired';
 $_LANG['wbteampro']['error']['license_suspended'] = 'wbTeamPro Error: License Key Suspended';
-$_LANG['wbteampro']['error']['permissiondenied'] = 'Permission Denied';
+$_LANG['wbteampro']['error']['permissiondenied'] = 'wbTeamPro Error: Permission Denied';
+$_LANG['wbteampro']['error']['view_layout_not_found'] = 'wbTeamPro Error: View Layout Not Found (%s)';
 
 /************************************** Errors */
 $_LANG['wbteampro']['alert']['default_label'] = 'Alert Message';
@@ -31,6 +32,7 @@ $_LANG['wbteampro']['notice']['noprojects'] = '<b>No Active Projects!</b><br>The
 $_LANG['wbteampro']['notice']['file_closed'] = '<b>File Thread Closed</b><br>This thread is closed and cannot be modified.';
 $_LANG['wbteampro']['notice']['topic_closed'] = '<b>Discussion Thread Closed</b><br>This thread is closed and cannot be modified.';
 $_LANG['wbteampro']['notice']['ticket_created'] = '<b>Ticket #%s Created</b><br>Your ticket has been created sucessfully.';
+$_LANG['wbteampro']['notice']['deprecated'] = '<b>Deprecated Operation</b><br>The request you have made will not be available in future versions.';
 
 /************************************** JS */
 $_LANG['wbteampro']['js']['tabProject'] = 'Project';
