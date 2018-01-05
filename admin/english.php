@@ -40,12 +40,14 @@ $_ADMINLANG['wbteampro']['error']['record_invalidvalue'] = 'The value provide fo
 $_ADMINLANG['wbteampro']['error']['update_check_failed'] = 'Failed to retrieve update status from remote server.';
 $_ADMINLANG['wbteampro']['error']['update_failed'] = '<b>Update Failed</b><br>A fatal error has interrupted the update operation.<br>Please review the log and correct any issues before trying again.';
 $_ADMINLANG['wbteampro']['error']['view_layout_not_found'] = 'wbTeamPro Error: View Layout Not Found (%s)';
+$_ADMINLANG['wbteampro']['error']['demo_restricted'] = '<b>Restricted Mode</b><br>The changes you have attempted are not permitted while the system is operating in Demo mode.';
 
 /************************************** Alerts */
 $_ADMINLANG['wbteampro']['alert']['default_label'] = 'Alert Message';
 $_ADMINLANG['wbteampro']['alert']['project_created'] = '<b>New Project Created</b><br>Your new project has been created.  You can now create the Action Tree.';
 $_ADMINLANG['wbteampro']['alert']['batch_success'] = '<b>Updates Successful</b><br>The updates have been applied the the selected records successfully!';
 $_ADMINLANG['wbteampro']['alert']['change_success'] = '<b>Changes Saved</b><br>The changes made to the previous record have been saved.';
+$_ADMINLANG['wbteampro']['alert']['toggle_success'] = '<b>Update Success</b><br>The status has been changed successfully!';
 $_ADMINLANG['wbteampro']['alert']['delete_success'] = '<b>Record Deleted</b><br>The record has been successfully deleted.';
 $_ADMINLANG['wbteampro']['alert']['close_success'] = '<b>Record Closed</b><br>You have successfully closed the previous record.';
 $_ADMINLANG['wbteampro']['alert']['copy_success'] = '<b>Copy Success</b><br>The project has been copied successfully.';
@@ -143,6 +145,7 @@ $_ADMINLANG['wbteampro']['js']['uiInvoiceNoItems'] = 'No Items to Invoice';
 $_ADMINLANG['wbteampro']['js']['uiInvoiceSuccess'] = 'The Timelog Invoice(s) have been created Successfully';
 $_ADMINLANG['wbteampro']['js']['uiModifyAccept'] = 'Apply Changes';
 $_ADMINLANG['wbteampro']['js']['uiModifyCancel'] = 'Cancel';
+$_ADMINLANG['wbteampro']['js']['doneEditing'] = 'Done Editing';
 
 /************************************** Page Headers */
 $_ADMINLANG['wbteampro']['taskheader']['prefix'] = 'wbTeamPro: ';
@@ -191,6 +194,8 @@ $_ADMINLANG['wbteampro']['clientvisible']['visible'] = 'Visible';
 $_ADMINLANG['wbteampro']['clientvisible']['view'] = 'View';
 $_ADMINLANG['wbteampro']['clientvisible']['modify'] = 'Modify';
 $_ADMINLANG['wbteampro']['clientvisible']['inherit'] = 'Inherit';
+$_ADMINLANG['wbteampro']['clientvisible']['toggle_hidden'] = 'Hidden - Make Visible';
+$_ADMINLANG['wbteampro']['clientvisible']['toggle_visible'] = 'Visible - Make Hidden';
 
 /************************************** Project Functions */
 $_ADMINLANG['wbteampro']['projectfunction']['default'] = 'Default';
@@ -243,6 +248,8 @@ $_ADMINLANG['wbteampro']['filelist']['clientaccess'] = 'Client Access';
 $_ADMINLANG['wbteampro']['filelist']['toggleaccess'] = 'Toggle Access';
 $_ADMINLANG['wbteampro']['filelist']['by'] = 'by';
 $_ADMINLANG['wbteampro']['filelist']['on'] = 'on';
+$_ADMINLANG['wbteampro']['filelist']['download'] = 'Download';
+$_ADMINLANG['wbteampro']['filelist']['fileview'] = 'View in Browser';
 $_ADMINLANG['wbteampro']['filefield']['label'] = 'Label';
 $_ADMINLANG['wbteampro']['filefield']['version'] = 'Ver';
 $_ADMINLANG['wbteampro']['filefield']['file'] = 'File';
@@ -324,6 +331,14 @@ $_ADMINLANG['wbteampro']['actionfield']['summary']['datefinish'] = 'Recurrence F
 $_ADMINLANG['wbteampro']['actionfield']['occurrence']['datestart'] = 'Occurrence Start';
 $_ADMINLANG['wbteampro']['actionfield']['occurrence']['datefinish'] = 'Occurrence Finish';
 
+/************************************** Report Titles */
+$_ADMINLANG['wbteampro']['report']['actionlist']['title'] = 'wbTeamPro: Action Report';
+$_ADMINLANG['wbteampro']['report']['actionlist']['description'] = 'This report will generate a table of actions matching your filter criteria.';
+$_ADMINLANG['wbteampro']['report']['projectlist']['title'] = 'wbTeamPro: Project Report';
+$_ADMINLANG['wbteampro']['report']['projectlist']['description'] = 'This report will generate a table of projects matching your filter criteria.';
+$_ADMINLANG['wbteampro']['report']['timeloglist']['title'] = 'wbTeamPro: Timelog Report';
+$_ADMINLANG['wbteampro']['report']['timeloglist']['description'] = 'This report will generate a table of timelogs matching your filter criteria.';
+
 /************************************** Action Report Labels */
 $_ADMINLANG['wbteampro']['actionreport']['schd_on'] = 'On Schedule';
 $_ADMINLANG['wbteampro']['actionreport']['schd_ahead'] = 'Ahead of Schedule';
@@ -336,14 +351,14 @@ $_ADMINLANG['wbteampro']['recurrence']['report']['daily']['count'] = 'Repeat eve
 $_ADMINLANG['wbteampro']['recurrence']['report']['daily']['until'] = 'Repeat every %s days until %s';
 $_ADMINLANG['wbteampro']['recurrence']['report']['weekly']['count'] = 'Repeat every %s weeks on %s for %s weeks';
 $_ADMINLANG['wbteampro']['recurrence']['report']['weekly']['until'] = 'Repeat every %s weeks on %s until %s';
-$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bymonthday']['count'] = 'Repeat every %s weeks on %s for %s weeks';
-$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bymonthday']['until'] = 'Repeat every %s weeks on %s until %s';
-$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bysetpos']['count'] = 'Repeat every %s weeks on %s for %s weeks';
-$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bysetpos']['until'] = 'Repeat every %s weeks on %s until %s';
-$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bymonthday']['count'] = 'Repeat every %s weeks on %s for %s weeks';
-$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bymonthday']['until'] = 'Repeat every %s weeks on %s until %s';
-$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bysetpos']['count'] = 'Repeat every %s weeks on %s for %s weeks';
-$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bysetpos']['until'] = 'Repeat every %s weeks on %s until %s';
+$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bymonthday']['count'] = 'Repeat on the %s day every %s month(s) for %s month(s)';
+$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bymonthday']['until'] = 'Repeat on the %s day every %s month(s) until %s';
+$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bysetpos']['count'] = 'Repeat on the %s %s every %s months(s) for %s month(s)';
+$_ADMINLANG['wbteampro']['recurrence']['report']['monthly']['bysetpos']['until'] = 'Repeat on the %s %s every %s months(s) until %s';
+$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bymonthday']['count'] = 'Repeat on the %s day of %s every %s years(s) for %s year(s)';
+$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bymonthday']['until'] = 'Repeat on the %s day of %s every %s years(s) until %s';
+$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bysetpos']['count'] = 'Repeat on the %s %s of %s every %s years(s) for %s year(s)';
+$_ADMINLANG['wbteampro']['recurrence']['report']['yearly']['bysetpos']['until'] = 'Repeat on the %s %s of %s every %s years(s) until %s';
 $_ADMINLANG['wbteampro']['recurrence']['rule_patterns']['legend'] = 'Recurrence Frequency';
 $_ADMINLANG['wbteampro']['recurrence']['rule_patterns']['daily']['everyxdays'] = '%sRecur every%s %s day(s)';
 $_ADMINLANG['wbteampro']['recurrence']['rule_patterns']['weekly']['everyxweeks'] = '%sRecur every%s %s weeks(s)';
@@ -484,6 +499,9 @@ $_ADMINLANG['wbteampro']['filter']['priority'] = 'Priority';
 $_ADMINLANG['wbteampro']['filter']['billable'] = 'Billable';
 $_ADMINLANG['wbteampro']['filter']['invoiced'] = 'Invoiced';
 $_ADMINLANG['wbteampro']['filter']['group_mode'] = 'Group by';
+$_ADMINLANG['wbteampro']['filter']['project_type'] = 'Project Type';
+$_ADMINLANG['wbteampro']['filter']['project_status'] = 'Project Status';
+$_ADMINLANG['wbteampro']['filter']['project_function'] = 'Project Function';
 
 /************************************** Page/List Navigation */
 $_ADMINLANG['wbteampro']['pagenav']['report'] = '%s '.$_ADMINLANG['global']['recordsfound'].', '.$_ADMINLANG['global']['page'].' %s '.$_ADMINLANG['global']['of'].' %s';
@@ -506,6 +524,7 @@ $_ADMINLANG['wbteampro']['formnav']['copy_template'] = 'Create Project';
 $_ADMINLANG['wbteampro']['formnav']['archive'] = 'Archive';
 $_ADMINLANG['wbteampro']['formnav']['unarchive'] = 'Un-Archive';
 $_ADMINLANG['wbteampro']['formnav']['save'] = 'Save';
+$_ADMINLANG['wbteampro']['formnav']['save_new'] = 'Save & New';
 $_ADMINLANG['wbteampro']['formnav']['apply'] = 'Apply';
 $_ADMINLANG['wbteampro']['formnav']['close'] = 'Close';
 $_ADMINLANG['wbteampro']['formnav']['cancel'] = 'Cancel';
@@ -593,6 +612,8 @@ $_ADMINLANG['wbteampro']['listhead']['ticket_urgency'] = 'Urgency';
 $_ADMINLANG['wbteampro']['listhead']['ticket_submitter'] = 'Submitter';
 $_ADMINLANG['wbteampro']['listhead']['ticket_department'] = 'Department';
 $_ADMINLANG['wbteampro']['listhead']['ticket_status'] = 'Status';
+$_ADMINLANG['wbteampro']['listhead']['ticket_admin'] = 'Owner';
+$_ADMINLANG['wbteampro']['listhead']['ticket_flag'] = 'Assigned';
 
 /************************************** File List */
 $_ADMINLANG['wbteampro']['listhead']['file_label'] = 'File Thread';
@@ -624,7 +645,7 @@ $_ADMINLANG['wbteampro']['configtopic']['project_settings'] = 'Project Settings'
 $_ADMINLANG['wbteampro']['configtopic']['action_settings'] = 'Action Settings';
 $_ADMINLANG['wbteampro']['configtopic']['billing_settings'] = 'Invoice Settings';
 $_ADMINLANG['wbteampro']['configtopic']['timelog_settings'] = 'Timelog Settings';
-$_ADMINLANG['wbteampro']['configtopic']['billing_resource_rates'] = 'Custom Billing Rates [BETA]';
+$_ADMINLANG['wbteampro']['configtopic']['billing_resource_rates'] = 'Custom Billing Rates';
 $_ADMINLANG['wbteampro']['configtopic']['billing_resource_rates-help'] = 'Rate evaluation for a timelog is calculated by evaluating values starting with the Invoice Settings "Hourly Rate" (above), then project a specific "Hourly Rate" (if defined), then the resource specific "Base Rate", and finally the Timelog Type rate values. Resource rates are can be either specific dollar value (ie: 75) or an offset to the preceding rate value (ie: +10, -20, +15%, -5%).';
 $_ADMINLANG['wbteampro']['configtopic']['billing_lineitem_formats'] = 'Invoice Line Item Formatting';
 $_ADMINLANG['wbteampro']['configtopic']['display_settings'] = 'Interface Settings';
@@ -665,6 +686,8 @@ $_ADMINLANG['wbteampro']['configfield']['keepalive_timeout'] = 'Keepalive Timeou
 $_ADMINLANG['wbteampro']['configfield']['keepalive_timeout-help'] = 'Number of seconds between server pings';
 $_ADMINLANG['wbteampro']['configfield']['js_delete_confirm'] = 'Delete Confirmation';
 $_ADMINLANG['wbteampro']['configfield']['js_delete_confirm-help'] = 'Confirmation to display on Delete Actions';
+$_ADMINLANG['wbteampro']['configfield']['clientarea_primarynavbar_link'] = 'Show Client Nav Link';
+$_ADMINLANG['wbteampro']['configfield']['clientarea_primarynavbar_link-help'] = 'Show the "My Projects" link on the client primary navigation bar.';
 $_ADMINLANG['wbteampro']['configfield']['server_timezone'] = 'Server Timezone';
 $_ADMINLANG['wbteampro']['configfield']['server_timezone-time'] = 'Server Time';
 $_ADMINLANG['wbteampro']['configfield']['server_timezone-help'] = 'Override Server Timezone (blank for server default)';
@@ -727,6 +750,12 @@ $_ADMINLANG['wbteampro']['configfield']['action']['status_oncomplete'] = 'Action
 $_ADMINLANG['wbteampro']['configfield']['action']['status_oncomplete-help'] = 'Automatically assign status when 100% complete';
 $_ADMINLANG['wbteampro']['configfield']['action']['default_recurdays'] = 'Default Recurring Workdays';
 $_ADMINLANG['wbteampro']['configfield']['action']['default_recurdays-help'] = 'Default weekdays for a Weekly Recurring summary';
+
+$_ADMINLANG['wbteampro']['configfield']['ticket']['automate_timelog'] = 'Automate Ticket View';
+$_ADMINLANG['wbteampro']['configfield']['ticket']['automate_timelog-help'] = 'Automatically load or start a timelog when viewing a ticket.';
+$_ADMINLANG['wbteampro']['configfield']['timelog']['autostop_timelog'] = 'Stop Timelog on Automation';
+$_ADMINLANG['wbteampro']['configfield']['timelog']['autostop_timelog-help'] = 'Automatically stop any running timelogs when automatically starting another.';
+
 $_ADMINLANG['wbteampro']['configfield']['format']['projectDate'] = 'Project Date';
 $_ADMINLANG['wbteampro']['configfield']['format']['projectDate-help'] = 'Project Created, Modified, Start, and End dates';
 $_ADMINLANG['wbteampro']['configfield']['format']['timelogDate'] = 'Timelog Date / Time';
@@ -743,12 +772,10 @@ $_ADMINLANG['wbteampro']['configfield']['format']['fileDate'] = 'File Thread Dat
 $_ADMINLANG['wbteampro']['configfield']['format']['fileDate-help'] = 'File Thread Created and Replied dates';
 $_ADMINLANG['wbteampro']['configfield']['format']['filePostDate'] = 'File Post Date / Time';
 $_ADMINLANG['wbteampro']['configfield']['format']['filePostDate-help'] = 'File Thread Post Created date';
-
 $_ADMINLANG['wbteampro']['configfield']['format']['jsDate'] = 'Filter / Selector Date Format';
 $_ADMINLANG['wbteampro']['configfield']['format']['jsDate-help'] = 'Date format used in the list filters & selector dialog.';
 $_ADMINLANG['wbteampro']['configfield']['format']['jsTime'] = 'Filter / Selector Time Format';
 $_ADMINLANG['wbteampro']['configfield']['format']['jsTime-help'] = 'Time format used in the list filters & selector dialog.';
-
 $_ADMINLANG['wbteampro']['configfield']['format']['adminName'] = 'Admin Name';
 $_ADMINLANG['wbteampro']['configfield']['format']['adminName-help'] = 'Manager/Assigned Display and Select List';
 $_ADMINLANG['wbteampro']['configfield']['format']['clientName'] = 'Client Name';
@@ -910,6 +937,9 @@ $_ADMINLANG['wbteampro']['listoption']['timelog_group_mode']['client'] = 'Client
 $_ADMINLANG['wbteampro']['listoption']['timelog_group_mode']['project'] = 'Project';
 $_ADMINLANG['wbteampro']['listoption']['timelog_group_mode']['action'] = 'Action';
 $_ADMINLANG['wbteampro']['listoption']['timelog_group_mode']['ticket'] = 'Ticket';
+$_ADMINLANG['wbteampro']['listoption']['automate_timelog']['none'] = 'Do Nothing';
+$_ADMINLANG['wbteampro']['listoption']['automate_timelog']['start'] = 'Start Timelog';
+$_ADMINLANG['wbteampro']['listoption']['automate_timelog']['open'] = 'Open Dialog';
 
 /************************************** Dynamic Select List Options */
 $_ADMINLANG['wbteampro']['listoption']['project_type']['internal'] = 'Internal';

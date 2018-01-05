@@ -1,21 +1,19 @@
 <?php
 
-
 /**
-
 
   Webuddha wbTeamPro
   (c)2010 Webuddha.com, The Holodyn Corporation - All Rights Reserved
 
-
   CHANGELOG ************
-
 
 **/
 
-
 defined('WHMCS_ADMIN') or die('Invalid Access');
+include('english.php');
 
+/************************************** Errors */
+$_ADMINLANG['wbteampro']['rtl'] = true;
 
 /************************************** Errors */
 $_ADMINLANG['wbteampro']['error']['default_label'] = 'הודעת שגיאה';
@@ -39,7 +37,6 @@ $_ADMINLANG['wbteampro']['error']['record_undefined'] = 'רשומה לא הוג�
 $_ADMINLANG['wbteampro']['error']['record_updatefailed'] = 'שגיאה בעדכון הרשומה (רשומות)';
 $_ADMINLANG['wbteampro']['error']['record_incomplete'] = 'המידע הדרוש לא סופק';
 
-
 /************************************** Alerts */
 $_ADMINLANG['wbteampro']['alert']['default_label'] = 'הודעת אזהרה';
 $_ADMINLANG['wbteampro']['alert']['project_created'] = '<b>פרויקט חדש נוצר</b><br>הפרויקט נוצר בהצלחה. כעת ניתן ליצור את עץ הפעולות.';
@@ -47,7 +44,6 @@ $_ADMINLANG['wbteampro']['alert']['change_success'] = '<b>שינויים נשמ�
 $_ADMINLANG['wbteampro']['alert']['delete_success'] = '<b>רשומה נמחקה</b><br>הרשומה נמחקה בהצלחה.';
 $_ADMINLANG['wbteampro']['alert']['close_success'] = '<b>רשומה נסגרה</b><br>הרשומה האחרונה נסגרה בהצלחה.';
 $_ADMINLANG['wbteampro']['alert']['copy_success'] = '<b>העתקה בוצעה בהצלחה</b><br>הפרויקט הועתק בהצלחה.';
-
 
 /************************************** Notices */
 $_ADMINLANG['wbteampro']['notice']['default_label'] = 'הודעת התראה';
@@ -60,11 +56,9 @@ $_ADMINLANG['wbteampro']['notice']['plugin_installed'] = '<b>תוצאות הPlug
 $_ADMINLANG['wbteampro']['notice']['file_closed'] = '<b>קובץ נסגר</b><br>אנא פתח קובץ זה על מנת לבצע שינויים.';
 $_ADMINLANG['wbteampro']['notice']['topic_closed'] = '<b>נושא נסגר</b><br>אנא פתח נושא זה על מנת לבצע שינויים.';
 
-
 /************************************** Graph */
 $_ADMINLANG['wbteampro']['graph']['label_projectsummary'] = 'השוואה בין פעילויות הקובץ';
 $_ADMINLANG['wbteampro']['graph']['label_timelogtwoyearsummary'] = 'מספר שעות ההתחברות';
-
 
 /************************************** Menu */
 $_ADMINLANG['wbteampro']['menu']['projectmanager'] = 'מנהל הפרויקט';
@@ -92,7 +86,6 @@ $_ADMINLANG['wbteampro']['menu']['templateprojects'] = 'תבניות פרויק�
 $_ADMINLANG['wbteampro']['menu']['setup_config'] = 'קונפיגורציה';
 $_ADMINLANG['wbteampro']['menu']['setup_plugins'] = 'נהל תוספים';
 $_ADMINLANG['wbteampro']['menu']['support'] = 'עזרה ותמיכה';
-
 
 /************************************** JS */
 $_ADMINLANG['wbteampro']['js']['tabProject'] = 'פרויקט';
@@ -130,7 +123,6 @@ $_ADMINLANG['wbteampro']['js']['uiInvoiceSuccess'] = 'קובץ הזמנים עב
 $_ADMINLANG['wbteampro']['js']['uiModifyAccept'] = 'שמור שינויים';
 $_ADMINLANG['wbteampro']['js']['uiModifyCancel'] = 'ביטול';
 
-
 /************************************** Page Headers */
 $_ADMINLANG['wbteampro']['taskheader']['prefix'] = 'wbTeamPro: ';
 $_ADMINLANG['wbteampro']['taskheader']['project_edit_archive'] = ' [ARCHIVE]';
@@ -149,7 +141,6 @@ $_ADMINLANG['wbteampro']['taskheader']['timelog_list'] = 'כל קבצי הזמנ
 $_ADMINLANG['wbteampro']['taskheader']['template_list'] = 'כל התבניות';
 $_ADMINLANG['wbteampro']['taskheader']['archive_list'] = 'כל הארכיונים';
 
-
 /************************************** Client Profile Tabs */
 $_ADMINLANG['wbteampro']['profiletab']['projects'] = 'פרויקטים';
 $_ADMINLANG['wbteampro']['profiletab']['actions'] = 'פעולות';
@@ -157,7 +148,6 @@ $_ADMINLANG['wbteampro']['profiletab']['files'] = 'קבצים';
 $_ADMINLANG['wbteampro']['profiletab']['topics'] = 'נושאים';
 $_ADMINLANG['wbteampro']['profiletab']['timelog'] = 'קבצי זמן';
 $_ADMINLANG['wbteampro']['profiletab']['tickets'] = 'כרטיסים';
-
 
 /************************************** Project Tabs */
 $_ADMINLANG['wbteampro']['projecttab']['details'] = 'פרטים';
@@ -169,12 +159,10 @@ $_ADMINLANG['wbteampro']['projecttab']['topics'] = 'נושאים';
 $_ADMINLANG['wbteampro']['projecttab']['topicsview'] = 'צפייה בנושאים';
 $_ADMINLANG['wbteampro']['projecttab']['timelog'] = 'קבצי זמן';
 
-
 /************************************** Admin Visibility */
 $_ADMINLANG['wbteampro']['adminvisible']['all'] = 'הכל';
 $_ADMINLANG['wbteampro']['adminvisible']['manager'] = 'מנהל בלבד';
 $_ADMINLANG['wbteampro']['adminvisible']['related'] = 'מנהל ומשתמש מורשה';
-
 
 /************************************** Client Visibility */
 $_ADMINLANG['wbteampro']['clientvisible']['hidden'] = 'חבוי';
@@ -183,12 +171,10 @@ $_ADMINLANG['wbteampro']['clientvisible']['view'] = 'צפה';
 $_ADMINLANG['wbteampro']['clientvisible']['modify'] = 'ערוך';
 $_ADMINLANG['wbteampro']['clientvisible']['inherit'] = 'הורש';
 
-
 /************************************** Project Functions */
 $_ADMINLANG['wbteampro']['projectfunction']['default'] = 'ברירת מחדל';
 $_ADMINLANG['wbteampro']['projectfunction']['template'] = 'תבנית';
 $_ADMINLANG['wbteampro']['projectfunction']['archive'] = 'ארכיון';
-
 
 /************************************** Project Fields */
 $_ADMINLANG['wbteampro']['projectsave']['newActionLabel'] = 'הגדר את הפרויקט';
@@ -215,7 +201,6 @@ $_ADMINLANG['wbteampro']['projectfield']['notes'] = 'הערות אישיות';
 $_ADMINLANG['wbteampro']['projectfield']['clientvisible'] = 'גישת לקוח';
 $_ADMINLANG['wbteampro']['projectfield']['function'] = 'פעולה';
 
-
 /************************************** Copy Fields */
 $_ADMINLANG['wbteampro']['copyform']['option_setup'] = 'אפשרויות העתקת פרויקט';
 $_ADMINLANG['wbteampro']['copyform']['project_setup'] = 'הגדרות פרויקט חדש';
@@ -226,7 +211,6 @@ $_ADMINLANG['wbteampro']['copyfield']['copy_files'] = 'העתק קבצים';
 $_ADMINLANG['wbteampro']['copyfield']['copy_topics'] = 'העתק נושאים';
 $_ADMINLANG['wbteampro']['copyfield']['copy_tickets'] = 'העתק יחסים עבור כרטיס';
 $_ADMINLANG['wbteampro']['copyfield']['copy_timelogs'] = 'העתק קובץ זמן';
-
 
 /************************************** File Fields */
 $_ADMINLANG['wbteampro']['filelist']['newthread'] = 'נושא חדש';
@@ -248,13 +232,11 @@ $_ADMINLANG['wbteampro']['filelist']['status_closed'] = 'סגור';
 $_ADMINLANG['wbteampro']['filelist']['expanddetail'] = 'הרחב';
 $_ADMINLANG['wbteampro']['filelist']['count'] = '%s קבצים';
 
-
 /************************************** Ticket Fields */
 $_ADMINLANG['wbteampro']['ticketlist']['linkticket'] = 'קישור';
 $_ADMINLANG['wbteampro']['ticketlist']['newticket'] = 'כרטיס חדש';
 $_ADMINLANG['wbteampro']['ticketfield']['project'] = 'פרויקט';
 $_ADMINLANG['wbteampro']['ticketfield']['action'] = 'פעולה';
-
 
 /************************************** Topic Fields */
 $_ADMINLANG['wbteampro']['topiclist']['newthread'] = 'נושא חדש';
@@ -271,7 +253,6 @@ $_ADMINLANG['wbteampro']['topiclist']['status_closed'] = 'סגור';
 $_ADMINLANG['wbteampro']['topiclist']['expanddetail'] = 'הרחב';
 $_ADMINLANG['wbteampro']['topiclist']['count'] = '%s נושאים';
 $_ADMINLANG['wbteampro']['topiclist']['created'] = 'נוצר ב %s';
-
 
 /************************************** Action Fields */
 $_ADMINLANG['wbteampro']['actionlist']['dispmode'] = 'מצב תצוגה:';
@@ -309,7 +290,6 @@ $_ADMINLANG['wbteampro']['actionfield']['notes'] = 'פתקים אישיים';
 $_ADMINLANG['wbteampro']['actionfield']['priority'] = 'עדיפות';
 $_ADMINLANG['wbteampro']['actionfield']['billable'] = 'זמן לחשבון';
 
-
 /************************************** Timelog Fields */
 $_ADMINLANG['wbteampro']['timeloglist']['totalelapsed'] = 'סך הכל נשאר';
 $_ADMINLANG['wbteampro']['timeloglist']['by'] = 'על ידי';
@@ -320,7 +300,6 @@ $_ADMINLANG['wbteampro']['timelogfield']['owner'] = 'בעלים';
 $_ADMINLANG['wbteampro']['timelogfield']['elapsed'] = 'זמן שנשאר';
 $_ADMINLANG['wbteampro']['timelogfield']['billable'] = 'זמן לחשבון';
 $_ADMINLANG['wbteampro']['timelogfield']['invoice'] = 'קבלה #';
-
 
 /************************************** Timelog */
 $_ADMINLANG['wbteampro']['timelog']['emptynote'] = '~';
@@ -333,7 +312,6 @@ $_ADMINLANG['wbteampro']['timelog']['parent_type']['group'] = 'קבוצה';
 $_ADMINLANG['wbteampro']['timelog']['parent_type']['task'] = 'מטלה';
 $_ADMINLANG['wbteampro']['timelog']['parent_type']['ticket'] = 'כרטיס תמיכה';
 
-
 /************************************** Timelog Modal */
 $_ADMINLANG['wbteampro']['timelog']['modal']['title'] = 'התחל קובץ זמן חדש';
 $_ADMINLANG['wbteampro']['timelog']['modal']['event'] = 'הקלד תקציר האירוע';
@@ -343,7 +321,6 @@ $_ADMINLANG['wbteampro']['timelog']['modal']['duration'] = 'משך זמן';
 $_ADMINLANG['wbteampro']['timelog']['modal']['durexample'] = 'לדוגמא: 2 שעות, 5 דקות, 10 שניות';
 $_ADMINLANG['wbteampro']['timelog']['modal']['owner'] = 'בעלים';
 $_ADMINLANG['wbteampro']['timelog']['modal']['billable'] = 'האם ינתן זמן לחשבון?';
-
 
 /************************************** Invoice Modal */
 $_ADMINLANG['wbteampro']['invoice']['modal']['title'] = 'צור קבלה חדשה';
@@ -357,18 +334,15 @@ $_ADMINLANG['wbteampro']['invoice']['modal']['autoapplycredit'] = 'שמור קר
 $_ADMINLANG['wbteampro']['invoice']['modal']['rate'] = 'תעריף לשעה';
 $_ADMINLANG['wbteampro']['invoice']['modal']['invoiceid'] = 'הוסף למספר הקבלה';
 
-
 /************************************** Modify Actions Modal */
 $_ADMINLANG['wbteampro']['modifyactions']['modal']['title'] = 'ערוך מספר פעולות';
 $_ADMINLANG['wbteampro']['modifyactions']['modal']['th-apply'] = 'שמור';
 $_ADMINLANG['wbteampro']['modifyactions']['modal']['th-option'] = 'אפשרות';
 $_ADMINLANG['wbteampro']['modifyactions']['modal']['th-value'] = 'ערך';
 
-
 /************************************** Confirm Modal */
 $_ADMINLANG['wbteampro']['confirm']['modal']['title'] = 'אשר פעולה';
 $_ADMINLANG['wbteampro']['confirm']['modal']['delete'] = 'הקלד מחיקה על מנת לאשר פעולה';
-
 
 /************************************** Ticket Modal */
 $_ADMINLANG['wbteampro']['ticket']['modal']['title'] = 'פתח כרטיס תמיכה חדש';
@@ -380,7 +354,6 @@ $_ADMINLANG['wbteampro']['ticket']['modal']['subject'] = 'נושא';
 $_ADMINLANG['wbteampro']['ticket']['modal']['message'] = 'הודעה';
 $_ADMINLANG['wbteampro']['ticket']['modal']['nodept'] = 'לא נמצאו הרשאות מחלקה';
 $_ADMINLANG['wbteampro']['ticket']['modal']['sendemail'] = 'שלח אימייל';
-
 
 /************************************** Page/List Navigation */
 $_ADMINLANG['wbteampro']['filter']['tablabel'] = $_ADMINLANG['global']['searchfilter'];
@@ -409,7 +382,6 @@ $_ADMINLANG['wbteampro']['filter']['root'] = 'רמת השורש';
 $_ADMINLANG['wbteampro']['filter']['zone'] = 'איזור';
 $_ADMINLANG['wbteampro']['filter']['priority'] = 'עדיפות';
 
-
 /************************************** Page/List Navigation */
 $_ADMINLANG['wbteampro']['pagenav']['report'] = '%s '.$_ADMINLANG['global']['recordsfound'].', '.$_ADMINLANG['global']['page'].' %s '.$_ADMINLANG['global']['of'].'%s';
 $_ADMINLANG['wbteampro']['pagenav']['prev'] = $_ADMINLANG['global']['previouspage'];
@@ -420,7 +392,6 @@ $_ADMINLANG['wbteampro']['pagenav']['limit'] = 'הגבלה';
 $_ADMINLANG['wbteampro']['pagenav']['go'] = $_ADMINLANG['global']['go'];
 $_ADMINLANG['wbteampro']['pagenav']['export'] = 'יצוא';
 $_ADMINLANG['wbteampro']['pagenav']['print'] = 'הדפסה';
-
 
 /************************************** Form Button Labels */
 $_ADMINLANG['wbteampro']['formnav']['edit'] = 'עריכה';
@@ -442,7 +413,6 @@ $_ADMINLANG['wbteampro']['formnav']['reload'] = 'טען מחדש';
 $_ADMINLANG['wbteampro']['formnav']['link'] = 'קישור';
 $_ADMINLANG['wbteampro']['formnav']['unlink'] = 'בטל קישור';
 
-
 /************************************** Dashboard Blocks */
 $_ADMINLANG['wbteampro']['dashhead']['topProjects'] = 'פרויקטים עם פעילות אחרונה';
 $_ADMINLANG['wbteampro']['dashhead']['topActions'] = 'פעולות מדורגות';
@@ -453,11 +423,9 @@ $_ADMINLANG['wbteampro']['dashhead']['topTopics'] = 'פעילות נושאים �
 $_ADMINLANG['wbteampro']['dashhead']['topFiles'] = 'פעילות קבצים אחרונה';
 $_ADMINLANG['wbteampro']['dashhead']['viewall'] = 'צפה בכולם';
 
-
 /************************************** List Table Headers */
 $_ADMINLANG['wbteampro']['listhead']['ordering'] = 'סידור';
 $_ADMINLANG['wbteampro']['listhead']['enabled'] = 'מאופשר';
-
 
 $_ADMINLANG['wbteampro']['listhead']['date_created'] = 'נוצר';
 $_ADMINLANG['wbteampro']['listhead']['date_modified'] = 'נערך';
@@ -465,15 +433,12 @@ $_ADMINLANG['wbteampro']['listhead']['date_activity'] = 'פעילות';
 $_ADMINLANG['wbteampro']['listhead']['date_start'] = 'תאריך התחלה';
 $_ADMINLANG['wbteampro']['listhead']['date_finish'] = 'תאריך סיום';
 
-
 $_ADMINLANG['wbteampro']['listhead']['client_userid'] = 'לקוח';
 $_ADMINLANG['wbteampro']['listhead']['owner_adminid'] = 'בעלים';
 $_ADMINLANG['wbteampro']['listhead']['manager_adminid'] = 'מנהל';
 $_ADMINLANG['wbteampro']['listhead']['assigned_adminid'] = 'משוייך';
 
-
 $_ADMINLANG['wbteampro']['listhead']['invoice_id'] = 'קבלה';
-
 
 /************************************** Project List */
 $_ADMINLANG['wbteampro']['listhead']['project_name'] = 'שם הפרויקט';
@@ -481,7 +446,6 @@ $_ADMINLANG['wbteampro']['listhead']['project_type'] = 'סוג';
 $_ADMINLANG['wbteampro']['listhead']['project_status'] = 'סטאטוס';
 $_ADMINLANG['wbteampro']['listhead']['project_complete'] = '%';
 $_ADMINLANG['wbteampro']['listhead']['project_tasks'] = '#';
-
 
 /************************************** Action List */
 $_ADMINLANG['wbteampro']['listhead']['action_name'] = 'שם פעולה';
@@ -491,20 +455,17 @@ $_ADMINLANG['wbteampro']['listhead']['action_complete'] = '%';
 $_ADMINLANG['wbteampro']['listhead']['action_elapsed'] = 'נשאר';
 $_ADMINLANG['wbteampro']['listhead']['action_priority'] = 'עדיפות';
 
-
 /************************************** Timelog List */
 $_ADMINLANG['wbteampro']['listhead']['timelog_note'] = 'הערת זמנים';
 $_ADMINLANG['wbteampro']['listhead']['timelog_elapsed'] = 'נשאר';
 $_ADMINLANG['wbteampro']['listhead']['timelog_start'] = 'החל';
 $_ADMINLANG['wbteampro']['listhead']['timelog_status'] = 'סטאטוס';
 
-
 /************************************** Topic List */
 $_ADMINLANG['wbteampro']['listhead']['topic_name'] = 'שם נושא';
 $_ADMINLANG['wbteampro']['listhead']['topic_activity'] = 'פעילות';
 $_ADMINLANG['wbteampro']['listhead']['topic_posts'] = 'פוסטים';
 $_ADMINLANG['wbteampro']['listhead']['topic_status'] = 'סטאטוס';
-
 
 /************************************** Ticket List */
 $_ADMINLANG['wbteampro']['listhead']['ticket_title'] = 'שם כרטיס';
@@ -515,26 +476,22 @@ $_ADMINLANG['wbteampro']['listhead']['ticket_submitter'] = 'שולח';
 $_ADMINLANG['wbteampro']['listhead']['ticket_department'] = 'מחלקה';
 $_ADMINLANG['wbteampro']['listhead']['ticket_status'] = 'סטאטוס';
 
-
 /************************************** File List */
 $_ADMINLANG['wbteampro']['listhead']['file_label'] = 'נושא קובץ';
 $_ADMINLANG['wbteampro']['listhead']['file_latest'] = 'קובץ אחרון';
 $_ADMINLANG['wbteampro']['listhead']['file_total'] = 'קבצים';
 $_ADMINLANG['wbteampro']['listhead']['file_status'] = 'סטאטוס';
 
-
 /************************************** Plugin List */
 $_ADMINLANG['wbteampro']['listhead']['plugin_name'] = 'שם Plugin';
 $_ADMINLANG['wbteampro']['listhead']['plugin_zone'] = 'אזור';
 $_ADMINLANG['wbteampro']['listhead']['plugin_element'] = 'איבר';
-
 
 /************************************** Module List
 $_ADMINLANG['wbteampro']['listhead']['module_name'] = 'שם מודול';
 $_ADMINLANG['wbteampro']['listhead']['module_element'] = 'איבר';
 $_ADMINLANG['wbteampro']['listhead']['module_position'] = 'מיקום';
  */
-
 
 /************************************** Select List Options */
 $_ADMINLANG['wbteampro']['listoption']['yes'] = 'כן';
@@ -553,7 +510,6 @@ $_ADMINLANG['wbteampro']['listoption']['level_class']['milestone'] = 'ציון �
 $_ADMINLANG['wbteampro']['listoption']['level_class']['group'] = 'קבוצה';
 $_ADMINLANG['wbteampro']['listoption']['level_class']['task'] = 'משימה';
 
-
 /************************************** Setup Tabs */
 $_ADMINLANG['wbteampro']['setuptab']['general'] = 'כללי';
 $_ADMINLANG['wbteampro']['setuptab']['project'] = 'פרויקט';
@@ -561,10 +517,8 @@ $_ADMINLANG['wbteampro']['setuptab']['action'] = 'פעולה';
 $_ADMINLANG['wbteampro']['setuptab']['display'] = 'הצגה';
 $_ADMINLANG['wbteampro']['setuptab']['extensions'] = 'סיומות';
 
-
 /************************************** Setup Configuration */
 $_ADMINLANG['wbteampro']['configfield']['version'] = 'גרסה';
-
 
 $_ADMINLANG['wbteampro']['configfield']['license_key'] = 'מפתח רישיון';
 $_ADMINLANG['wbteampro']['configfield']['license_key-help'] = 'מפתח הרישיון הינו דרוש לאימות.';
@@ -573,12 +527,10 @@ $_ADMINLANG['wbteampro']['configfield']['license_key-confirm'] = 'פעולה ז�
 $_ADMINLANG['wbteampro']['configfield']['project_file_path'] = 'מיקום הפרוייקט';
 $_ADMINLANG['wbteampro']['configfield']['project_file_path-help'] = 'מיקום ישיר או כללי למקום הימצאותו של הפרויקט';
 
-
 $_ADMINLANG['wbteampro']['configfield']['admin_super_roles'] = 'תפקידי סופר אדמין';
 $_ADMINLANG['wbteampro']['configfield']['admin_super_roles-help'] = 'יכול לצפות ולערוך הכל';
 $_ADMINLANG['wbteampro']['configfield']['admin_valid_roles'] = 'תפקידים תקינים';
 $_ADMINLANG['wbteampro']['configfield']['admin_valid_roles-help'] = 'יכול לצפות ולערוך במידה והינו בעלים / משוייך';
-
 
 $_ADMINLANG['wbteampro']['configfield']['project_link_target'] = 'מיקום קישור הפרויקט';
 $_ADMINLANG['wbteampro']['configfield']['project_link_target-help'] = 'ברירת מחדש: חלון חדש';
@@ -615,12 +567,10 @@ $_ADMINLANG['wbteampro']['configfield']['api_active-help'] = 'אפשר שיחו�
 $_ADMINLANG['wbteampro']['configfield']['timelog_elapsed_format'] = 'פורמט זמן';
 $_ADMINLANG['wbteampro']['configfield']['timelog_elapsed_format-help'] = 'ברירת מחדל: אוטומטי';
 
-
 $_ADMINLANG['wbteampro']['configfield']['timelog_ticketreply_autostop'] = 'עצירה אוטומטית של כרטיסים';
 $_ADMINLANG['wbteampro']['configfield']['timelog_ticketreply_autostop-help'] = 'עצור זמנים באופן אוטומטי כאשר הינך מגיב לכרטיסים';
 $_ADMINLANG['wbteampro']['configfield']['timelog_ticketreply_autostop_onstatus'] = 'סנן סטאטוסים של כרטיסים אוטומטית';
 $_ADMINLANG['wbteampro']['configfield']['timelog_ticketreply_autostop_onstatus-help'] = 'הקלד את הסטאטוסים אשר יפעילו את האפשרות לעצור את הזמנים באופן אוטומטי (ריק עבור כולם)';
-
 
 $_ADMINLANG['wbteampro']['configfield']['project']['adjust_date'] = 'עדכן תאריכים בצורה אוטומטית';
 $_ADMINLANG['wbteampro']['configfield']['project']['adjust_date-help'] = 'עדכן את תאריכי הפרויקט על מנת להתאימם לגבולות העץ';
@@ -630,7 +580,6 @@ $_ADMINLANG['wbteampro']['configfield']['project']['project_status'] = 'סטאט
 $_ADMINLANG['wbteampro']['configfield']['project']['project_status-help'] = 'סטאטוסי פרויקט אפשריים (אחד לכל שורה)';
 $_ADMINLANG['wbteampro']['configfield']['project']['allow_assigned_any-help'] = 'כל הפרויקטים משוייכים לכל המנהלים';
 $_ADMINLANG['wbteampro']['configfield']['project']['allow_assigned_any'] = 'אפשר שיוך אוטומטי של פרויקטים';
-
 
 $_ADMINLANG['wbteampro']['configfield']['action']['max_depth'] = 'עומק פעולה מקסימאלי (#)';
 $_ADMINLANG['wbteampro']['configfield']['action']['max_depth-help'] = 'העומק המקסימלי עבור פעולות פרויקט';
@@ -651,7 +600,6 @@ $_ADMINLANG['wbteampro']['configfield']['action']['allow_assigned_any-help'] = '
 $_ADMINLANG['wbteampro']['configfield']['action']['status_oncomplete'] = 'סטאטוס פעולה הושלם';
 $_ADMINLANG['wbteampro']['configfield']['action']['status_oncomplete-help'] = 'שנה סטאטוס להושלם באופן אוטומטי כאשר 100%';
 
-
 $_ADMINLANG['wbteampro']['configfield']['format']['projectDate'] = 'תאריך פרויקט';
 $_ADMINLANG['wbteampro']['configfield']['format']['projectDate-help'] = 'תאריך יצירת, עריכת, התחלת וסיום פרויקט';
 $_ADMINLANG['wbteampro']['configfield']['format']['timelogDate'] = 'תאריך בקובץ הזמן';
@@ -669,7 +617,6 @@ $_ADMINLANG['wbteampro']['configfield']['format']['fileDate-help'] = 'תאריך
 $_ADMINLANG['wbteampro']['configfield']['format']['filePostDate'] = 'תאריך פוסט הקובץ';
 $_ADMINLANG['wbteampro']['configfield']['format']['filePostDate-help'] = 'תאריך יצירת פוסט הקובץ';
 
-
 $_ADMINLANG['wbteampro']['configfield']['format']['adminName'] = 'שם מנהל';
 $_ADMINLANG['wbteampro']['configfield']['format']['adminName-help'] = 'תצוגה וחיפוש רשימת מנהלים / משוייכים';
 $_ADMINLANG['wbteampro']['configfield']['format']['clientName'] = 'שם לקוח';
@@ -678,7 +625,6 @@ $_ADMINLANG['wbteampro']['configfield']['format']['contactName'] = 'שם איש 
 $_ADMINLANG['wbteampro']['configfield']['format']['contactName-help'] = 'תצוגה וחיפוש רשימת אנשי קשר';
 $_ADMINLANG['wbteampro']['configfield']['format']['ajaxClientList'] = 'חיפוש Ajax עבור לקוח';
 $_ADMINLANG['wbteampro']['configfield']['format']['ajaxClientList-help'] = 'חיפוש דינאמי עבור לקוחות';
-
 
 $_ADMINLANG['wbteampro']['configfield']['billing']['hourly_rate'] = 'תעריף לשעה';
 $_ADMINLANG['wbteampro']['configfield']['billing']['hourly_rate-help'] = 'שיעור חיוב ברירת המחדל';
@@ -695,7 +641,6 @@ $_ADMINLANG['wbteampro']['configfield']['billing']['round_elapsed-help'] = 'עג
 $_ADMINLANG['wbteampro']['configfield']['billing']['desc_format'] = 'פורמט קבלה';
 $_ADMINLANG['wbteampro']['configfield']['billing']['desc_format-help'] = 'פורמט עבור שורת פריט בקבלה';
 
-
 /************************************** Extension System */
 $_ADMINLANG['wbteampro']['extensionlist']['type_plugin'] = 'Plugin';
 $_ADMINLANG['wbteampro']['extensionlist']['type_module'] = 'מודול';
@@ -705,13 +650,11 @@ $_ADMINLANG['wbteampro']['extensionlist']['zone_admin'] = 'מנהל';
 $_ADMINLANG['wbteampro']['extensionlist']['new_module'] = 'מודול חדש';
 $_ADMINLANG['wbteampro']['extensionlist']['install_plugin'] = 'התקן Pluginים';
 
-
 $_ADMINLANG['wbteampro']['extensionfield']['type_plugin'] = 'Plugin';
 $_ADMINLANG['wbteampro']['extensionfield']['extension_name'] = 'שם העתק';
 $_ADMINLANG['wbteampro']['extensionfield']['extension_enabled'] = 'מאופשר';
 $_ADMINLANG['wbteampro']['extensionfield']['extension_zone'] = 'איזור מערכת';
 $_ADMINLANG['wbteampro']['extensionfield']['date_created'] = 'מותקן';
-
 
 $_ADMINLANG['wbteampro']['extensionxml']['name'] = 'שם';
 $_ADMINLANG['wbteampro']['extensionxml']['version'] = 'גרסה';
@@ -719,11 +662,9 @@ $_ADMINLANG['wbteampro']['extensionxml']['author'] = 'יוצר';
 $_ADMINLANG['wbteampro']['extensionxml']['created'] = 'נוצר';
 $_ADMINLANG['wbteampro']['extensionxml']['description'] = 'תיאור';
 
-
 /************************************** License First Run */
 $_ADMINLANG['wbteampro']['licenseform']['description'] = '<b>מפתח הרישיון שלך אינו חוקי.</b><br/>אנא עדכן את ההגדרות הללו על מנת לאמת את שימושך.';
 $_ADMINLANG['wbteampro']['licenseform']['success'] = '<b>רישיון מותקן</b><br/>מפתח הרישיון שלך נשמר.';
-
 
 /************************************** Widgets */
 $_ADMINLANG['wbteampro']['widget']['projectactivity'] = 'wbTeamPro פעילות פרויקט';
@@ -736,12 +677,10 @@ $_ADMINLANG['wbteampro']['widget']['fileactivity'] = 'wbTeamPro פעילות ק�
 $_ADMINLANG['wbteampro']['widget']['topicactivity'] = 'wbTeamPro פעילות נושאים';
 $_ADMINLANG['wbteampro']['widget']['ticketactivity'] = 'wbTeamPro פעילות כרטיסים';
 
-
 /************************************** QuickMenu */
 $_ADMINLANG['wbteampro']['quickmenu']['delete_rows'] = 'מחק השורות';
 $_ADMINLANG['wbteampro']['quickmenu']['invoice_rows'] = 'שורות חשבונית';
 $_ADMINLANG['wbteampro']['quickmenu']['modify_rows'] = 'לשנות שורות';
-
 
 /************************************** Support Tickets Tab */
 $_ADMINLANG['wbteampro']['supporttickets']['ticket_list'] = 'כרטיסי הפרויקט';
@@ -749,7 +688,4 @@ $_ADMINLANG['wbteampro']['supporttickets']['ticket_elapsed'] = 'זמן הנשא�
 $_ADMINLANG['wbteampro']['supporttickets']['timelog_list'] = 'שמירת זמן עבור כרטיס';
 $_ADMINLANG['wbteampro']['supporttickets']['file_list'] = 'קבצים השייכים לפרויקט';
 
-
 /** END LANGUAGE **/
-
-?>
